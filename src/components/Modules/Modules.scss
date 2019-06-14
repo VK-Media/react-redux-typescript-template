@@ -1,0 +1,89 @@
+@import '../../styles/variables';
+
+.modules {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100vw - #{$navigation-width});
+    height: calc(100vh - #{$status-bar-button-height});
+    background-color: $white;
+    
+    .heading {
+        top: 0;
+        width: calc(100vw - #{$navigation-width});
+        position: fixed;
+        background-color: $white;
+
+        h1 {
+            padding: $spacer * .5 $spacer;
+            flex: 1;
+            border-bottom: 1px solid $light-grey;
+
+            span {
+                color: $purple;
+            }
+        }
+
+        .include-button {
+            color: white;
+            padding: 0 40px;
+            transition: all .25s;
+            cursor: pointer;
+            background-color: $dark-grey;
+
+            &:hover,
+            &:focus {
+                background-color: darken($dark-grey, 10);
+            }
+
+            &.active {
+                background-color: $green;
+                color: $white;
+
+                &:hover,
+                &:focus {
+                    background-color: darken($green, 10);
+                }
+            }
+        }
+    }
+
+    .module {
+        h3 {
+            span {
+                color: $purple;
+            }
+        }
+
+        .purple {
+            color: $purple;
+        }
+
+        .blue {
+            color: $blue;
+        }
+    }
+
+    .classes {
+        position: fixed;
+        top: $spacer * 3;
+        right: 0;
+        width: calc(100vw - #{$navigation-width});
+        height: calc(100vh - #{$status-bar-button-height} - #{$spacer} * 3);
+        overflow: auto;
+        padding: $spacer;
+    }
+}
+
+.container {
+    border: 1px solid $light-grey;
+    padding: $spacer * .5;
+
+    .item {
+        border: 1px solid $blue;
+
+        &:not(.padding){
+            padding: $spacer;
+        }
+    }
+}

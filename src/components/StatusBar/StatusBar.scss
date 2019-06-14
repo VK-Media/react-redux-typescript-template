@@ -1,0 +1,48 @@
+@import '../../styles/variables';
+
+.status-bar {
+    position: fixed;
+    width: calc(100vw - #{$navigation-width});
+    bottom: 0;
+    right: 0;
+    background-color: $white;
+
+    .module-count {
+        padding: 0 $spacer;
+        flex: 1;
+        border-top: 1px solid $light-grey;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    .button {
+        height: $status-bar-button-height;
+        padding: 0 40px;
+        transition: background-color .25s;
+        cursor: pointer;
+
+        span {
+            color: $white;
+        }
+    }
+
+    .download-css {
+        background-color: $green;
+
+        &:focus,
+        &:hover {
+            background-color: darken($green, 10);
+        }
+    }
+
+    .reset-modules {
+        background-color: $red;
+
+        &:focus,
+        &:hover {
+            background-color: darken($red, 10);
+        }
+    }
+}

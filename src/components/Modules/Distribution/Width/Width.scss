@@ -1,0 +1,13 @@
+.container {
+    &.fw-w {
+        &.distribution-width {
+            padding: 5px;
+            
+            .item {
+                margin-right: 0;
+                margin-bottom: 0;
+                margin: 5px;
+            }
+        }
+    }
+}
