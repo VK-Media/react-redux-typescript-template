@@ -7,7 +7,8 @@ type Effect = ThunkAction<any, ApplicationState, any, ApplicationAction>;
 
 export const requestCss = (): Effect => (dispatch, getState) => {
     const selectedModules = getState().selectedModules;
-    let url: string = 'http://localhost:5002/css?';
+    const baseUrl: string = process.env.API_BASE_URL || 'http://localhost:5002';
+    let url: string = `${baseUrl}/css?`;
 
     selectedModules.forEach(selectedModule => {
         url += `${selectedModule}=1&`;
