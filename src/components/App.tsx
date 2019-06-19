@@ -6,8 +6,6 @@ import Modules from './Modules/Modules';
 import Navigation from './Navigation/Navigation';
 
 const App: React.FC = () => {
-    console.log(process.env.API_BASE_URL);
-    
 	return (
 		<div className="app">
             <Router>
