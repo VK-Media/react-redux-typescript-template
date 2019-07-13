@@ -1,0 +1,1 @@
+export { addTextToData } from './dataAction';
