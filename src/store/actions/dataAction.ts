@@ -1,5 +1,6 @@
-import { AddDummyToData } from '../../types/redux/dataTypes';
+import { AddTextToData } from '../../types/redux/dataTypes';
 
-export const addDummyToData = (): AddDummyToData => ({
-    type: 'addDummyToData'
+export const addTextToData = (text: string): AddTextToData => ({
+    type: 'addTextToData',
+    payload: text
 });

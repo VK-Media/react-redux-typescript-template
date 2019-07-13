@@ -5,9 +5,10 @@ export interface DataState {
     data: Array<string>;
 }
 
-export interface AddDummyToData extends Action {
-    type: 'addDummyToData';
+export interface AddTextToData extends Action {
+    type: 'addTextToData';
+    payload: string
 }
 
 export type DataAction =
-    | AddDummyToData;
+    | AddTextToData;

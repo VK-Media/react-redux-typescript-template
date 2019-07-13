@@ -1,1 +1,1 @@
-export { addDummyToData } from './dataAction';
+export { addTextToData } from './dataAction';

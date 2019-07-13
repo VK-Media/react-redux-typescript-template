@@ -8,9 +8,9 @@ export const initialState: DataState = {
 
 const reducer = (state = initialState, action: DataAction) => {
     switch (action.type) {
-        case "addDummyToData":
+        case "addTextToData":
             return produce(state, draft => {
-                draft.data = ['dummy'];
+                draft.data.push(action.payload);
             });
         default:
             return state;

@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import { resetSelectedModules } from '../../store/actions';
-import { requestCss } from '../../store/effects';
+import { requestCss } from '../../store/effects/dataEffects';
 import { ApplicationState } from '../../store/types';
 
 import './StatusBar.scss';
