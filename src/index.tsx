@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 
 import App from './components/App';
-import './index.scss';
 import ProviderWrapper from './store/ProviderWrapper';
+
+import './index.scss';
 
 ReactDOM.render(<ProviderWrapper><App /></ProviderWrapper>, document.getElementById('root'));
 
