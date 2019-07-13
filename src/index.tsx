@@ -6,7 +6,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 
 import App from './components/App';
-import reducer, { initialState } from './store/reducer';
+import reducer, { initialState } from './store/reducers';
 
 import * as serviceWorker from './serviceWorker';
 
