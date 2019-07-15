@@ -1,15 +1,15 @@
 import React from 'react';
-import thunk from "redux-thunk";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 
+import middlewares from './middlewares';
 import reducers from "./reducers/index";
 
 const ProviderWrapper: React.FC = props => {
   const store = createStore(
     reducers,
-    composeWithDevTools(applyMiddleware(thunk))
+    composeWithDevTools(applyMiddleware(...middlewares))
   );
 
   return (
@@ -19,6 +19,4 @@ const ProviderWrapper: React.FC = props => {
   );
 }
 
-export default ProviderWrapper
-
-
+export default ProviderWrapper;
