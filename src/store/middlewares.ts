@@ -1,6 +1,6 @@
-import thunk from "redux-thunk";
-import logger from "redux-logger";
 import { Middleware } from "redux";
+import logger from "redux-logger";
+import thunk from "redux-thunk";
 
 const middlewares: Array<Middleware> = [thunk];
 
