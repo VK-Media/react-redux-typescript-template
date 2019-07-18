@@ -8,7 +8,7 @@
 4. Run `git add .` in your terminal
 5. Run `git commit -m "initial commit"` in your terminal
 
-## Includes
+## What does the template include
 
 ### Packages
 
