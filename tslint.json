@@ -8,12 +8,18 @@
 		]
 	},
 	"rules": {
-		"indent": [true, "tabs", 4],
-		"arrow-parens": [true, "ban-single-arg-parens"],
-		"array-type": [true, "generic"],
-		"trailing-comma": [
-			true,
-			{ "multiline": "never", "singleline": "never" }
-		]
+		"no-submodule-imports": false,
+		"object-literal-sort-keys": false,
+		"member-ordering": false,
+		"member-access": false,
+		"curly": false,
+		"no-this-assignment": false,
+		"no-console": false,
+		"semicolon": false,
+		"quotemark": false,
+		"indent": false,
+		"trailing-comma": false,
+		"jsx-wrap-multiline": false,
+		"arrow-parens": false
 	}
 }
